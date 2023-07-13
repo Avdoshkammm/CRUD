@@ -1,0 +1,29 @@
+﻿<Window x:Class="CRUD.AddProductWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CRUD"
+        mc:Ignorable="d"
+        Title="Добавить заказ?" Background="#99d98c" Height="450" Width="300">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+        <TextBlock Text="Название" Grid.Column="1" Grid.Row="1" Margin="10,10,115,40" Grid.ColumnSpan="2"></TextBlock>
+        <TextBox x:Name="Name" Margin="10,30,115,90" Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="2"></TextBox>
+        <TextBlock Text="Цена" Grid.Column="1" Margin="10,100,0,10"></TextBlock>
+        <TextBox x:Name="Cost" Margin="10,120,115,0" Grid.Column="1" Grid.ColumnSpan="2"></TextBox>
+        <TextBlock Text="Количество" Grid.Column="1" Grid.Row="1" Margin="10,70,0,10"></TextBlock>
+        <TextBox x:Name="Items" Margin="10,100,115,20" Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="2"></TextBox>
+
+        <Button Background="#d9ed92" Content="Добавить товар" Grid.Column="1" Grid.Row="2" FontSize="10" Margin="5,100,5,5" Click="AddProductButton_Click"></Button>
+    </Grid>
+</Window>
